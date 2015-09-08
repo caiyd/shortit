@@ -1,0 +1,109 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.nutz:shortit:war:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 45, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building shortit 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> tomcat7-maven-plugin:2.2:run (default-cli) @ shortit >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ shortit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ shortit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< tomcat7-maven-plugin:2.2:run (default-cli) @ shortit <<<
+[INFO] 
+[INFO] --- tomcat7-maven-plugin:2.2:run (default-cli) @ shortit ---
+[INFO] Running war on http://localhost:8080/shortit
+[INFO] Using existing Tomcat server configuration at D:\javaWorkspace\shortit\target\tomcat
+[INFO] create webapp with contextPath: /shortit
+九月 02, 2015 5:11:55 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+九月 02, 2015 5:11:55 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Tomcat
+九月 02, 2015 5:11:55 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.47
+ALL Nutz Log via Log4jLogAdapter
+17:11:57 [INFO ]              org.nutz.log.Logs  - Nutz is licensed under the Apache License, Version 2.0 .
+Report bugs : https://github.com/nutzam/nutz/issues
+17:11:57 [INFO ]         org.nutz.mvc.NutFilter  - NutFilter[nutz] starting ...
+17:11:57 [DEBUG]        org.nutz.resource.Scans  - Locations for Scans:
+[JarResourceLocation [jarPath=E:\tools\apache-maven-3.0.3\boot\plexus-classworlds-2.4.jar], FileSystemResourceLocation [root=D:\javaWorkspace\shortit\target\classes], FileSystemResourceLocation [root=D:\javaWorkspace\shortit], JarResourceLocation [jarPath=D:/maven/apache-maven-3.0.3/repository/org/nutz/nutz/1.b.52/nutz-1.b.52.jar]]
+17:11:57 [INFO ] rce.impl.ErrorResourceLocation  - ErrorResourceLocation [loc=D:\javaWorkspace\shortit\src\main\webapp\WEB-INF\classes], maybe it is in your classpath, but not exist
+17:11:57 [WARN ]        org.nutz.resource.Scans  - /WEB-INF/lib/ NOT found?!
+17:11:57 [DEBUG]        org.nutz.resource.Scans  - Locations for Scans:
+[JarResourceLocation [jarPath=E:\tools\apache-maven-3.0.3\boot\plexus-classworlds-2.4.jar], FileSystemResourceLocation [root=D:\javaWorkspace\shortit\target\classes], ErrorResourceLocation [loc=D:\javaWorkspace\shortit\src\main\webapp\WEB-INF\classes], FileSystemResourceLocation [root=D:\javaWorkspace\shortit], JarResourceLocation [jarPath=D:/maven/apache-maven-3.0.3/repository/org/nutz/nutz/1.b.52/nutz-1.b.52.jar]]
+17:11:57 [DEBUG] z.mvc.config.AbstractNutConfig  - MainModule: <cn.nutz.shortit.MainModule>
+17:11:57 [DEBUG] z.mvc.config.AbstractNutConfig  - Loading by class org.nutz.mvc.impl.NutLoading
+17:11:57 [INFO ]   org.nutz.mvc.impl.NutLoading  - Nutz Version : 1.b.52 
+17:11:57 [INFO ]   org.nutz.mvc.impl.NutLoading  - Nutz.Mvc[nutz] is initializing ...
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  - Web Container Information:
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - Default Charset : UTF-8
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - Current . path  : D:\javaWorkspace\shortit\.
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - Java Version    : 1.7.0_04
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - File separator  : \
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - Timezone        : Asia/Shanghai
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - OS              : Windows 7 x86
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - ServerInfo      : Apache Tomcat/7.0.47
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - Servlet API     : 3.0
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  -  - ContextPath     : /shortit
+17:11:57 [DEBUG] z.mvc.config.AbstractNutConfig  - MainModule: <cn.nutz.shortit.MainModule>
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  - >> app.root = D:/javaWorkspace/shortit/src/main/webapp
+17:11:57 [DEBUG]        org.nutz.castor.Castors  - Using 91 castor for Castors
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  - @IocBy(type=org.nutz.mvc.ioc.provider.ComboIocProvider, args=["*org.nutz.ioc.loader.json.JsonLoader", "ioc/", "*org.nutz.ioc.loader.annotation.AnnotationIocLoader", "cn.nutz.shortit"])
+17:11:57 [DEBUG]        org.nutz.resource.Scans  - Found 2 resource by src( ioc/ ) , regex( ^(.+[.])(js|json)$ )
+17:11:57 [DEBUG] utz.ioc.loader.json.JsonLoader  - loading ioc js config from [conf.js]
+17:11:57 [DEBUG] utz.ioc.loader.json.JsonLoader  - loading ioc js config from [dao.js]
+17:11:57 [DEBUG] utz.ioc.loader.json.JsonLoader  - Loaded 3 bean define from path=[ioc/] --> [dataSource, dbConfig, dao]
+17:11:57 [DEBUG]        org.nutz.resource.Scans  - Found 7 resource by src( cn/nutz/shortit/ ) , regex( ^.+[.]class$ )
+17:11:57 [DEBUG] annotation.AnnotationIocLoader  - Found a Class with Ioc-Annotation : class cn.nutz.shortit.module.ApiModule
+17:11:57 [DEBUG] annotation.AnnotationIocLoader  - Found a Class with Ioc-Annotation : class cn.nutz.shortit.module.PluginModule
+17:11:57 [INFO ] annotation.AnnotationIocLoader  - Scan complete ! Found 2 classes in 1 base-packages!
+beans = ["apiModule", "pluginModule"]
+17:11:57 [DEBUG] z.mvc.config.AbstractNutConfig  - MainModule: <cn.nutz.shortit.MainModule>
+17:11:57 [INFO ]   org.nutz.mvc.impl.NutLoading  - Build URL mapping by org.nutz.mvc.impl.UrlMappingImpl ...
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  - @Views(DefaultViewMaker)
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  - @ChainBy(org.nutz.mvc.impl.NutActionChainMaker)
+17:11:57 [DEBUG]     org.nutz.mvc.impl.Loadings  - module class location 'file:/D:/javaWorkspace/shortit/target/classes/'
+17:11:57 [DEBUG]     org.nutz.mvc.impl.Loadings  -  > scan 'cn.nutz.shortit'
+17:11:57 [DEBUG]        org.nutz.resource.Scans  - Found 7 resource by src( cn/nutz/shortit/ ) , regex( ^.+[.]class$ )
+17:11:57 [DEBUG]     org.nutz.mvc.impl.Loadings  -    >> add 'cn.nutz.shortit.module.ApiModule'
+17:11:57 [DEBUG]     org.nutz.mvc.impl.Loadings  -    >> add 'cn.nutz.shortit.module.PluginModule'
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/api/read/?'               >> ApiModule.read(...)            : Object     | @Ok(raw  ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/api/down/?'               >> ApiModule.down(...)            : Object     | @Ok(void ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/?'                        >> ApiModule.code(...)            : Object     | @Ok(raw  ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/api/create/file'          >> ApiModule.createFile(...)      : Object     | @Ok(raw  ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/api/create/url'           >> ApiModule.createUrl(...)       : Object     | @Ok(raw  ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/api/create/txt'           >> ApiModule.createTxt(...)       : Object     | @Ok(raw  ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/api/last'                 >> ApiModule.lastUrl(...)         : String     | @Ok(raw  ) @Fail(http:500) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/plugin/bookmarklet'       >> PluginModule.showBookmarklet(...) : void       | @Ok(jsp:/index.jsp) @Fail(jsp:/50x.jsp) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  -    '/plugin/bookmarklet/create' >> PluginModule.createUrlForBookmarklet(...) : void       | @Ok(jsp:/iframe.jsp) @Fail(jsp:/50x.jsp) | by 0 Filters | (I:UTF-8/O:UTF-8)
+17:11:57 [INFO ]   org.nutz.mvc.impl.NutLoading  - Found 9 module methods
+17:11:57 [DEBUG]   org.nutz.mvc.impl.NutLoading  - Localization: org.nutz.mvc.impl.NutMessageLoader('msg')  dft<>
+17:11:57 [DEBUG]        org.nutz.resource.Scans  - Found 1 resource by src( msg ) , regex( ^.+[.]properties$ )
+17:11:57 [DEBUG] nutz.mvc.impl.NutMessageLoader  - Load Messages in 1 resource : [[NutResource[zh_CN/system.properties]]]
+17:11:57 [DEBUG] nutz.mvc.impl.NutMessageLoader  - Message Loaded, size = 2
+17:11:57 [INFO ]   org.nutz.mvc.impl.NutLoading  - Setup application...
+17:11:57 [INFO ]  org.nutz.filepool.NutFilePool  - Init file-pool by: D:\javaWorkspace\shortit\src\main\webapp\WEB-INF/rsdata [0]
+17:11:57 [DEBUG]  org.nutz.filepool.NutFilePool  - file-pool.home: 'D:\javaWorkspace\shortit\src\main\webapp\WEB-INF\rsdata'
+17:11:57 [INFO ]  org.nutz.filepool.NutFilePool  - file-pool.cursor: 4
+17:11:57 [INFO ]   org.nutz.mvc.impl.NutLoading  - Nutz.Mvc[nutz] is up in 94ms
+九月 02, 2015 5:11:57 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+17:12:04 [DEBUG] g.nutz.mvc.impl.UrlMappingImpl  - Found mapping for [GET] path=/4 : ApiModule.code(...)
+17:12:04 [DEBUG]       org.nutz.ioc.impl.NutIoc  - Get 'apiModule'<class cn.nutz.shortit.module.ApiModule>
+17:12:04 [DEBUG]       org.nutz.ioc.impl.NutIoc  - 	 >> Load definition
+17:12:04 [DEBUG] oc.loader.combo.ComboIocLoader  - Found IocObject(apiModule) in IocLoader(AnnotationIocLoader@27711753)
+17:12:04 [DEBUG]       org.nutz.ioc.impl.NutIoc  - 	 >> Make...'apiModule'<class cn.nutz.shortit.module.ApiModule>
+17:12:04 [DEBUG] .aop.impl.DefaultMirrorFactory  - class cn.nutz.shortit.module.ApiModule , no config to enable AOP for this type.
+17:12:04 [DEBUG] org.nutz.ioc.impl.ScopeContext  - Save object 'apiModule' to [app] 
